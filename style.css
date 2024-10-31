@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 50px;
+}
+      
+.app {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    font-size: 70px;
+    margin-left: 80px; 
+    text-align: center;
+    align-items: center;
+}
+
+header p {
+    font-size: 50px;
+}
+
+
+.pads {
+    margin: 50px;
+  
+    height: 50vh;
+    width: 100hv;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1.5;
+}
+
+ 
+.padpanel1 {
+    height: 100px;
+    width: 305px;
+    background: rgb(239, 1, 17);
+    border: 5px solid black;
+    align-self: flex-end;
+}
+
+.padpanel2 {
+    height: 100px;
+    width: 305px;
+    background: rgb(136, 243, 43);
+    border: 5px solid black;
+    align-self: flex-end;
+}
+
+.padpanel3 {
+    height: 100px;
+    width: 305px;
+    background: rgb(209, 199, 10);
+    border: 5px solid black;
+    align-self: flex-end;
+}
+
+.padpanel4 {
+    height: 100px;
+    width: 305px;
+    background: rgb(249, 120, 163);
+    border: 5px solid black;
+    align-self: flex-end;
+}
+
+.padpanel5 {
+    height: 100px;
+    width: 305px;
+    background: rgb(107, 3, 107);
+    border: 5px solid black;
+    align-self: flex-end;
+}
+
+.padpanel6 {
+    height: 100px;
+    width: 305px;
+    background: rgb(3, 213, 246);
+    border: 5px solid black;
+    align-self: flex-end;
+}
+
+@keyframes jump {
+    0%{
+        bottom: 0%;
+        left: 20%;
+    }
+    50%{
+        bottom: 50%;
+        left: 50%;
+    }
+    100%{
+        bottom: 0%;
+        left: 80%;
+    }
+}
+
+.visual div {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    bottom: 0%;
+    z-index: -1;
+}
